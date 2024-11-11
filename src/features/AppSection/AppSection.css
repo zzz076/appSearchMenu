@@ -1,0 +1,27 @@
+/* 全部設備通用樣式 */
+.app-section-container {
+  width: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* 手機設備 (最大寬度 768px) */
+@media (max-width: 768px) {
+  .app-section-container .ant-pagination {
+    font-size: 12px;
+  }
+}
+
+/* 平板設備 (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .app-section-container .ant-pagination {
+    font-size: 24px;
+  }
+}
+
+/* 大型設備 (大於 1024px) */
+@media (min-width: 1025px) {
+  .app-section-container .ant-pagination {
+    font-size: 32px;
+  }
+}
